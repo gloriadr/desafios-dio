@@ -1,0 +1,128 @@
+:root {
+    --vermelho:#E50914;
+    --preto:#141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+   background: var(--preto);
+   font-family:  sans-serif, 'Times New Roman', Times;
+   color: white;
+}
+header .container {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
+}
+header .logo {
+    margin-left: 10px;
+    color: var(--vermelho);
+    font-family: 'Bebas Neue', cursive;
+    font-size: 40px;
+}
+header nav a {
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+header nav a:hover {
+    color: #fff;
+}
+main .first-show {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: linear-gradient(rgba(0, 0, 0,.50),rgba(0, 0, 0,.50)100%), url(/IMG/madresolohaydos.jpg);
+    background-size: cover;
+    height: 400px;
+    font-size: 16px;
+}
+main .first-show .description {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+.container {
+    margin-left: 30px;
+}
+.first-show .container {
+    width: 70%;
+}
+/* Encontrar a fonte dos textos*/
+main .first-show .container .title {
+    margin-top: 15px;
+    font-size: 40px;
+}
+main .first-show .container .buttons .button {
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: 1.2s ease all;
+}
+main .first-show .container .buttons .button  i {
+    margin-right: 8px;
+}
+main .first-show .container .buttons .button:hover {
+    background-color: #fff;
+    color: #000;
+}
+.box-shows {
+    height: 100%;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+    margin-right: 56px;
+}
+.box-title-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.pop-title {
+    width: 14%;
+    font-family: Helvetica, sans-serif;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 17px;
+    color: #fff;
+    margin-top: 20px;
+    margin-left: 54px;
+    margin-right: 0;
+    margin-bottom: 16px;
+    cursor: pointer;
+}
+/*fazer animação para o texto*/
+.title-hover {
+    width: 200px;
+    margin-top: 20px;
+    margin-right: 0;
+    margin-bottom: 16px;
+    font-family: Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 11px;
+    display: none;
+    cursor: pointer;
+}
+.corousel-shows {
+    margin-left: 54px;
+    
+}
+.owl-nav {
+    display: none;
+}
+.owl-dots {
+    display: none;
+}
+/*Ultima aula = 5*/

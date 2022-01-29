@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--css-->
+    <link rel="stylesheet" href="CSS/style.css">
+    <!--responsive css-->
+    <link rel="stylesheet" href="CSS/responsive.css">
+    <!--font title-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@100&display=swap" rel="stylesheet">
+  
+    <!--owl css-->
+    <link rel="stylesheet" href="/CSS/OWL/owl.carousel.min.css">
+    <link rel="stylesheet" href="/CSS/OWL/owl.theme.default.min.css">
+    <title>Netflix</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h2 class="logo">NETFLIX</h2>
+            <nav>
+                <a href="#">Inicio</a>
+                <a href="#">Séries</a>
+                <a href="#">Filmes</a>
+                <a href="#">Documentários</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="first-show">
+            <div class="container">
+                <h3 class="title">MÃE SÓ TEM DUAS</h3>
+                <p class="description">Depois de descobrirem que seus bebês foram trocados na maternidade, duas mulheres acham uma saída inusitada: formar uma família.</p>
+                <div class="buttons">
+                    <button onmousedown="start(this)" onmouseup="bStart(this)" onmouseenter="initialWatch(this)" onmouseleave="leaveWatch(this)" role="button" class="button" id="button-watch">
+                        <i class="far fa-play-circle"></i>
+                        ASSISTIR AGORA
+                    </button>
+                    <button onmousedown="more(this)" onmouseup="bMore(this)" onmouseenter="initialMore(this)" onmouseleave="leaveMore(this)" on role="button" class="button" id="button-more">
+                        <i class="fas fa-info-circle"></i>
+                        MAIS INFORMAÇÕES
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+        <div class="box-title-1">
+            <p class="pop-title" onmouseenter="hover(this)" onmouseleave="leaveHover(this)">Populares na Netflix</p>
+            <p class="title-hover"onmouseenter="keep(this)" onmouseleave="go(this)">veja mais ></p>
+        </div>
+
+        <div class="corousel-shows">
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <img class="box-shows" src="IMG/img1.jpg" alt="shang-chi">
+                </div>
+                <div class="item">
+                    <img class="box-shows" src="IMG/img2.jpg" alt="venom">
+                </div>
+                <div class="item">
+                    <img class="box-shows" src="IMG/img3.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="box-shows" src="IMG/img4.jpg" alt="yellowjackets">
+                </div>
+                <div class="item">
+                    <img class="box-shows" src="IMG/img5.jpg" alt="tirocerto">
+                </div>
+                <div class="item">
+                    <img class="box-shows" src="IMG/img6.jpg" alt="peakyblinders">
+                </div>
+                <div class="item">
+                    <img class="box-shows" src="IMG/img7.jpg" alt="riverdale">
+                </div>
+                <div class="item">
+                    <img class="box-shows" src="IMG/img8.jpg" alt="grey's-anatomy">
+                </div>
+                <div class="item">
+                    <img class="box-shows" src="IMG/img9.jpg" alt="lucifer">
+                </div>
+                <div class="item">
+                    <img class="box-shows" src="IMG/img10.jpg" alt="spide-man">
+                </div>
+            </div>
+        </div>
+      <!--font awesome-->
+      <script src="https://kit.fontawesome.com/a9fb78edcd.js" crossorigin="anonymous"></script>
+      <!--owl js-->
+      <script src="JS/OWL/jquery.min.js"></script>
+      <script src="JS/OWL/owl.carousel.min.js"></script>
+      <script src="JS/script.js"></script>
+      <script src="JS/interation.js"></script>
+</body>
+</html>
