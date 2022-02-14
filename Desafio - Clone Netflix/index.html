@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <!--css-->
     <link rel="stylesheet" href="CSS/style.css">
     <!--responsive css-->
@@ -14,8 +15,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@100&display=swap" rel="stylesheet">
   
     <!--owl css-->
-    <link rel="stylesheet" href="/CSS/OWL/owl.carousel.min.css">
-    <link rel="stylesheet" href="/CSS/OWL/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="CSS/OWL/owl.carousel.css">
+    <link rel="stylesheet" href="CSS/OWL/owl.theme.default.min.css">
     <title>Netflix</title>
 </head>
 <body>
@@ -27,6 +29,7 @@
                 <a href="#">Séries</a>
                 <a href="#">Filmes</a>
                 <a href="#">Documentários</a>
+                <a href="#" id="boxPerfil">Perfil</a>
             </nav>
         </div>
     </header>
@@ -85,14 +88,93 @@
                 <div class="item">
                     <img class="box-shows" src="IMG/img10.jpg" alt="spide-man">
                 </div>
+                <div class="item">
+                    <img src="IMG/IMG-Likes/img5.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="IMG/IMG-Likes/img2.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="IMG/IMG-Likes/img3.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="IMG/IMG-Likes/img4.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="IMG/IMG-Likes/img6.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="IMG/IMG-Likes/img7.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="IMG/IMG-Likes/img8.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="IMG/IMG-Likes/img9.jpg" alt="">
+                </div>
+                <div class="item">
+                 <div class="item">
+                    <img src="IMG/IMG-Likes/img10.jpg" alt="">
+                 </div>   
+                </div>
             </div>
         </div>
+
+    <!--Modal-->
+<div class="containerPerfil" id="containerPerfil">
+    <div class="perfil">
+        <button class="fechar" id="fechar">x</button>
+            <div class="dadosPerfil">
+                <img src="IMG/IMG-Likes/img-like-2.jpg" alt="" class="icon">
+                <label for="nome">Usuário:</label>
+                <input type="text">
+            </div>
+        
+        <div class="containerLikeDeslike">
+            <div class="like boxContent" id="like">
+                    <p id="titleLikes" class="titleLikeseDeslikes">Marcados com gostei</p>
+                <div class="conteudoLike conteudo" id="conteudoLike">
+                    <div class="owl-carousel owl-theme">
+                        <img src="IMG/img-like-1.jpg" alt="serie" class="showLikes">
+                        <img src="IMG/IMG-Likes/img5.jpg" alt="" class="showLikes">
+                        <img src="IMG/IMG-Likes/img6.jpg" alt="" class="showLikes">
+                        <img src="IMG/IMG-Likes/img11.jpg" alt="" class="showLikes">
+                        <img src="IMG/IMG-Likes/img20.jpg" alt="" class="showLikes">
+                        <img src="IMG/IMG-Likes/img12.jpg" alt="" class="showLikes">
+                    </div>
+                </div>
+            </div>
+            <div class="deslikes boxContent" id="deslikes">
+                <p id="titleDeslikes"  class="titleLikeseDeslikes">
+                     Marcados com  não gostei</p>
+                <div class="conteudoDeslike conteudo" id="conteudoDeslike">
+                    <div class="owl-carousel owl-theme">
+                        <img src="IMG/IMG-Likes/img-like-3.jpg" alt="serie" class="showDesikes">
+                        <img src="IMG/IMG-Unlikes/img10.jpg" alt="">
+                        <img src="IMG/IMG-Unlikes/img13.jpg" alt="">
+                        <img src="IMG/IMG-Unlikes/img14.jpg" alt="">
+                        <img src="IMG/IMG-Unlikes/img15.jpg" alt="">
+                        <img src="IMG/IMG-Unlikes/img16.jpg" alt="">
+                        <img src="IMG/IMG-Unlikes/img17.jpg" alt="">
+                        <img src="IMG/IMG-Unlikes/img18.jpg" alt="">
+                        <img src="IMG/IMG-Unlikes/img19.jpg" alt="">
+                        <img src="IMG/IMG-Unlikes/img4.jpg" alt="">
+                        <img src="IMG/IMG-Unlikes/img7.jpg" alt="">
+                        <img src="IMG/IMG-Unlikes/img8.jpg" alt="">
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
       <!--font awesome-->
-      <script src="https://kit.fontawesome.com/a9fb78edcd.js" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
       <!--owl js-->
       <script src="JS/OWL/jquery.min.js"></script>
       <script src="JS/OWL/owl.carousel.min.js"></script>
       <script src="JS/script.js"></script>
       <script src="JS/interation.js"></script>
+
 </body>
 </html>

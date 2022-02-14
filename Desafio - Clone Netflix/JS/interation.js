@@ -56,3 +56,32 @@ function go() {
     let subtitle = document.getElementsByClassName("title-hover")[0];
     subtitle.style.display = "none";
 }
+/*Perfil*/
+document.getElementById("fechar").addEventListener("click", fecharPerfil);
+document.getElementById("boxPerfil").addEventListener("click", abrirPerfil)
+
+
+function fecharPerfil() {
+    let perfil = document.getElementById("containerPerfil");
+    perfil.style.display = "none";
+    let abrirLikes =  document.getElementById("conteudoLike");
+    let abrirDeslikes = document.getElementById("conteudoDeslike");
+   
+    
+}
+
+function abrirPerfil() {
+    let perfil = document.getElementById("containerPerfil");
+    perfil.style.display = "flex";
+}
+//box de likes
+
+const boxContent = document.getElementsByClassName("boxContent");
+for(i = 0; i < boxContent.length; i++) {
+    boxContent[i].addEventListener("click",function active() {
+        this.classList.toggle("active");
+    })
+}
+
+
+

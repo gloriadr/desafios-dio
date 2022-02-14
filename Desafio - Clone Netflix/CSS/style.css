@@ -8,11 +8,30 @@
     padding: 0;
     box-sizing: border-box;
 }
+/*Scrollbar*/
+::-webkit-scrollbar {
+    width: .5em;
+    scroll-behavior: smooth;
+    
+}
+::-webkit-scrollbar-track {
+    background-color: #141414;
+    margin-block-start: 3.2em;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #202020fb;
+    border-radius: 100vw;
+    border: .1em solid rgb(117, 117, 117);
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #2b2a2afb;
+}
 body {
    background: var(--preto);
    font-family:  sans-serif, 'Times New Roman', Times;
    color: white;
 }
+/*Header*/
 header .container {
    display: flex;
    flex-direction: row;
@@ -33,12 +52,13 @@ header nav a {
 header nav a:hover {
     color: #fff;
 }
+/*Main*/
 main .first-show {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background-image: linear-gradient(rgba(0, 0, 0,.50),rgba(0, 0, 0,.50)100%), url(/IMG/madresolohaydos.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0,.50),rgba(0, 0, 0,.50)100%), url(madresolohaydos.jpg);
     background-size: cover;
     height: 400px;
     font-size: 16px;
@@ -53,7 +73,6 @@ main .first-show .description {
 .first-show .container {
     width: 70%;
 }
-/* Encontrar a fonte dos textos*/
 main .first-show .container .title {
     margin-top: 15px;
     font-size: 40px;
@@ -77,11 +96,16 @@ main .first-show .container .buttons .button:hover {
     color: #000;
 }
 .box-shows {
-    height: 100%;
-    width: 100%;
+    height: 80%;
+    width: 80%;
     display: block;
     cursor: pointer;
     margin-right: 56px;
+    
+}
+
+.btnmark {
+  position: absolute;
 }
 .box-title-1 {
     display: flex;
@@ -102,7 +126,6 @@ main .first-show .container .buttons .button:hover {
     margin-bottom: 16px;
     cursor: pointer;
 }
-/*fazer animação para o texto*/
 .title-hover {
     width: 200px;
     margin-top: 20px;
@@ -115,8 +138,9 @@ main .first-show .container .buttons .button:hover {
     display: none;
     cursor: pointer;
 }
+/*corousel body*/
 .corousel-shows {
-    margin-left: 54px;
+    margin-left: 25px;
     
 }
 .owl-nav {
@@ -125,4 +149,131 @@ main .first-show .container .buttons .button:hover {
 .owl-dots {
     display: none;
 }
-/*Ultima aula = 5*/
+/*perfil*/
+.containerPerfil {
+    width: 100%;
+    height: 100vh;
+    background: transparent;
+    position:fixed;
+    top:0px;
+    left: 0px;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.fechar {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    border: .1em solid rgb(117, 117, 117);
+    border-radius: 50px;
+    top: 15px;
+    right:35px;
+    background-color: #141414;
+    color: #535353;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.fechar:hover{
+    border: .1em solid rgb(184, 184, 184);
+    color: rgb(184, 184, 184);
+}
+.perfil {
+    width: 50%;
+    height: 500px;
+    background-color:#141414;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-margin-block-start: .5em;
+    
+
+}
+.dadosPerfil {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    width: auto;
+}
+.dadosPerfil input {
+    width: 350px;
+    height: 30px;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgb(184, 184, 184);
+    font-size: 1.1em;
+}
+.icon {
+    width: 80px;
+    height: 80px;
+    background-color: #AAA;
+    border-radius: 50px;
+    border: solid 5px white;
+}
+.containerLikeDeslikes {
+    width: 800px;
+    height: auto;
+    overflow-y: scroll;
+    position: relative;
+}
+.boxContent {
+    margin: 15px;
+}
+.like {
+    padding: 20px;
+    border: .1em solid rgb(117, 117, 117);
+    border-radius: 5px;
+    position: relative;
+}
+.titleLikeseDeslikes {
+    position: relative;
+    top: 50%;
+    cursor: pointer;
+    padding: 5px;
+}
+.titleLikeseDeslikes::before {
+    content: "+";
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+}
+.active .titleLikeseDeslikes::before {
+    content: "-";
+}
+.deslikes {
+    padding: 20px;
+    border: .1em solid rgb(117, 117, 117);
+    border-radius: 5px;
+    position: relative;
+}
+.conteudo {
+    position: relative;
+    height: 0;
+    overflow: scroll;
+    transition: 0.5s;
+    overflow-y: hidden;
+}
+.active .conteudo  {
+    height: 200px;
+    padding: 15px;
+    
+}
+.showLikes {
+    width: 15%;
+    height: auto;
+}
+
+
